@@ -31,8 +31,8 @@ jobs:
         if: ${{ success() }}
         uses: appleboy/discord-action@v0.2.1
         with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          webhook_id: ${{ DIS_HOOK_ID }}
+          webhook_token: ${{ DIS_HOOK_TOKEN }}
           content: |
             ✅ Pull Request #${{ github.event.pull_request.number }} by ${{ github.event.pull_request.user.login }} has passed all checks!
             Title: ${{ github.event.pull_request.title }}
