@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, we are gettinssg ssomewhere!");
+            Console.WriteLine("Hello, we are gettinssg sddsomewhere!");
             Console.ReadLine();
         }
     }
