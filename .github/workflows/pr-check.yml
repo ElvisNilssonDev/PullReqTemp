@@ -27,15 +27,13 @@ jobs:
         run: npm test
 
       - name: Notify Discord
+        if: ${{ success() }}
         uses: burbujapanda/discord-notify-action@v1
         with:
           webhook-url: ${{ secrets.DIS_HOOK }}
-          username: "Elvis"
           message: |
             🎸 Pull Request #${{ github.event.pull_request.number }} by ${{ github.event.pull_request.user.login }}
             Title: ${{ github.event.pull_request.title }}
             URL: ${{ github.event.pull_request.html_url }}
-            Status: ${{ job.status }} ✅
+            Status: SUCCESS ✅
             Elvis did it!
-
-            URL: ${{ github.event.pull_request.html_url }}
