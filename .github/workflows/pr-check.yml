@@ -26,14 +26,12 @@ jobs:
       - name: Run tests
         run: npm test
 
-      # Discord Notification Step
-      - name: Notify Discord
+     - name: Notify Discord
         if: ${{ success() }}
-        uses: appleboy/discord-action@v0.2.1
+        uses: burbujapanda/discord-notify-action@v1
         with:
-          webhook_id: ${{ DIS_HOOK_ID }}
-          webhook_token: ${{ DIS_HOOK_TOKEN }}
-          content: |
+          webhook-url: ${{ secrets.DIS_HOOK }}
+          message: |
             ✅ Pull Request #${{ github.event.pull_request.number }} by ${{ github.event.pull_request.user.login }} has passed all checks!
             Title: ${{ github.event.pull_request.title }}
             URL: ${{ github.event.pull_request.html_url }}
