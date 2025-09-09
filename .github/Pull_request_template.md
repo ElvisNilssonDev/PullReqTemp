@@ -1,35 +1,36 @@
-# Pull Request
+# 1️⃣ Pull Request
 
 Kort sammanfattning (1-2 meningar):
 
-Beskrivning
+# 2️⃣ Beskrivning
 
 Beskriv vad denna PR gör och varför den behövs. Förklara viktiga arkitekturval eller trade-offs.
 
-Typ av ändring
+# 3️⃣ Typ av ändring
 
+Vad har du ändrat?
 
-
-
-Relaterade ärenden / tickets
+# 4️⃣ Relaterade ärenden / tickets
 
 Closes/Fixes: #
 
 Relaterade: #
 
-Hur har detta testats?
+# 5️⃣ Hur har detta testats?
 
 Beskriv steg för att manuellt verifiera ändringen och/eller vilka automatiska tester som lades till.
 
-För lokal testning
+# 6️⃣ För lokal testning
 
 Steg 1
 
 Steg 2
 
-Förväntat resultat
+# 7️⃣ Förväntat resultat
 
-Checklista innan mergning
+Vad förväntar du?
+
+# 8️⃣ Checklista innan mergning
 
 
 
@@ -57,5 +58,3 @@ Screenshots / demo
 Lägg till bilder eller gif om det blir enklare att förstå UI-ändringar.
 
 För commit-meddelanden: skriv kort och tydligt — följ gärna projektets konvention (ex: Conventional Commits).
-
-Tips: Anpassa denna mall efter teams behov. Korta PR:er är enklare att granska — dela upp stora ändringar om möjligt.
