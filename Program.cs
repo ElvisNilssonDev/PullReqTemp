@@ -6,6 +6,8 @@
         {
             Console.WriteLine("Hello, we are gettinssg ssomIcantwhere!");
             Console.ReadLine();
+
+            Console.Readkey();
         }
     }
 }
